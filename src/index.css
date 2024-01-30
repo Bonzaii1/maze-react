@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .main-container {
+    @apply w-screen h-screen flex flex-col bg-gradient-to-r from-moonlit-1 via-moonlit-2 to-moonlit-3 p-20
+  }
+
+  .top-nav {
+    @apply absolute top-0 w-4/5 h-14 items-center flex z-30 pt-6 text-white
+  }
+
+  .nav-text {
+    @apply absolute font-normal text-4xl text-title-text font-Merriweather
+  }
+
+  .content {
+    @apply p-10 w-full h-full py-12
+  }
+
+  .grid {
+    @apply w-full h-full
+  }
+
+
+  .bottom {
+    @apply w-full h-1/6 z-30 top-28
+  }
+
+  .btn {
+    @apply text-white font-medium rounded-lg text-sm w-28 py-1.5 m-3 text-center bg-gradient-to-r from-purple-300 to-purple-500 hover:from-purple-500 hover:to-purple-700
+  }
+}
